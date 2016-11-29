@@ -1,0 +1,2 @@
+class ScoreQuestion < ApplicationRecord
+end
