@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scores: 1
+  time: 2016-11-29 14:25:06
+
+two:
+  scores: 1
+  time: 2016-11-29 14:25:06
