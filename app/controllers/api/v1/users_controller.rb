@@ -16,7 +16,7 @@ class Api::V1::UsersController < ApplicationController
 
   private
   def user_params
-    params.permit(:name, :my_github_url, :mail, :password, :password_confirmation)
+    params.permit(:name, :my_github_url, :default_lang, :mail, :password, :password_confirmation)
   end
 end
 
