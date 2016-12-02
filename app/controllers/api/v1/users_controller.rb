@@ -1,14 +1,14 @@
 class Api::V1::UsersController < ApplicationController
   def index
-    User.all
+    render :json => User.all
   end
 
   def create
     user =  User.new(user_params)
     if user.save
-      render :show, status: :created
+      render :json => user
     else
-      render :show, status: :error
+      render :json, status: :error
     end
   end
 
