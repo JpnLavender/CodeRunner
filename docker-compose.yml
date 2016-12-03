@@ -12,7 +12,6 @@ services:
     depends_on:
       - db
   front:
-    image: node
     build: ./app/view
     command: gulp
     volumes:
