@@ -2,7 +2,7 @@ version: '2'
 services:
   db:
     image: postgres
-  web:
+  server:
     build: .
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
@@ -11,4 +11,13 @@ services:
       - "3000:3000"
     depends_on:
       - db
-
+  front:
+    image: node
+    build: ./app/view
+    command: gulp
+    volumes:
+      - .:/myapp
+    ports:
+      - "8000:8000"
+    depends_on:
+      - server
