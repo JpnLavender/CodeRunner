@@ -1,24 +1,23 @@
-# README
+#Programming Web Runner
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#What is this?
+Immediate execution environment for performing competition programming on the Web
 
-Things you may want to cover:
+#Setup
 
-* Ruby version
+##When Docker is not installed
 
-* System dependencies
+~~~sh
+$ brew cask install dokcer
+$ docker-compose up -d
+~~~
 
-* Configuration
+##When Docker is installed
 
-* Database creation
+~~~sh
+$ docker-compose up -d
+~~~
 
-* Database initialization
+##How to use
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Open http://0.0.0.0:8000/ by Browser
