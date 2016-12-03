@@ -69,7 +69,7 @@ class MyPage extends React.Component{
 
 render((
   <Router history={hashHistory}>
-    <Route path="/app" component={App}>
+    <Route path="/" component={App}>
       <IndexRoute component={Index} />
       <Route path="/Questions" component={Questions} />
       <Route path="/MyPage" component={MyPage} />
