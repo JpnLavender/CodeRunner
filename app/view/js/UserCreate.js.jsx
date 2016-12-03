@@ -21,8 +21,10 @@ export default class UserFormBox extends React.Component {
   }
   render(){
     return(
-      <UserCreateForm onUserSubmit={this.handleUserDataSubmit}/>
-    )
+      <div className="userFormBox">
+        <UserCreateForm onUserSubmit={this.handleUserDataSubmit}/>
+      </div>
+    );
   }
 };
 
@@ -49,7 +51,7 @@ export class UserCreateForm extends React.Component {
       default_lang:          default_lang,
       mail:                  mail,
       password:              password,
-      password_confirmation: password_confirmation,
+      password_confirmation: password_confirmation
     })
 
     ReactDOM.findDOMNode(this.refs.name).value                  = '';
