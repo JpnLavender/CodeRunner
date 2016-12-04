@@ -18,10 +18,12 @@ class App extends React.Component {
             <li><Link to="app">test</Link></li>
             <li><Link to="Questions">Questions</Link></li>
             <li><Link to="MyPage">MyPage</Link></li>
+            <li><Link to="SignUp">SignUp</Link></li>
           </ul>
-          Logged in as Jane
         </header>
-        {this.props.children}  
+        <main>
+          {this.props.children}  
+        </main>
       </div>
     );
   }
@@ -61,7 +63,20 @@ class MyPage extends React.Component{
     return(
       <div>
         <h1>Users</h1>
-        // <UserFormBox></UserFormBox>
+      </div>
+    );
+  }
+}
+
+class SignUp extends React.Component{
+  constructor(props){
+    super(props);
+  }
+  render(){
+    return(
+      <div>
+        <h1>SignUp</h1>
+        <UserFormBox></UserFormBox>
       </div>
     );
   }
@@ -73,6 +88,7 @@ render((
       <IndexRoute component={Index} />
       <Route path="/Questions" component={Questions} />
       <Route path="/MyPage" component={MyPage} />
+      <Route path="/SignUp" component={SignUp} />
     </Route>
   </Router>
 ), document.querySelector('#app'));
