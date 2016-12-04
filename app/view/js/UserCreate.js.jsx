@@ -3,6 +3,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { FormControl } from 'react-bootstrap';
+
 export default class UserFormBox extends React.Component {
   handleUserDataSubmit(user) {
     var serverHost = window.location.origin + "/api/v1/users";
@@ -67,19 +69,13 @@ export class UserCreateForm extends React.Component {
     return(
       <form className="userCreateForm" onSubmit={this.handleSubmit}>
         <ul>
-          <li>UserName</li>
-          <li><input type="text"     placeholder="UserName" ref="name" /></li>
-          <li>GitHubAccountURL</li>
-          <li><input type="url"      placeholder="GitHubAccount" ref="my_github_url" /></li>
-          <li>DefaultLanguage</li>
-          <li><input type="text"     placeholder="DefaultLanguage" ref="default_lang" /></li>
-          <li>MailAddress</li>
-          <li><input type="email"    placeholder="Mail" ref="mail" /></li>
-          <li>PassWord</li>
-          <li><input type="password" placeholder="PassWord" ref="password" /></li>
-          <li>ReturnPassword</li>
-          <li><input type="password" placeholder="PassWord" ref="password_confirmation" /></li>
-          <li><input type="submit" value="Post" /></li>
+          <li><FormControl type="text"     label="UserName"        placeholder="UserName"        ref="name" /></li>
+          <li><FormControl type="url"      label="GitHubAccount"   placeholder="GitHubAccount"   ref="my_github_url" /></li>
+          <li><FormControl type="text"     label="DefaultLanguage" placeholder="DefaultLanguage" ref="default_lang" /></li>
+          <li><FormControl type="email"    label="Mail"            placeholder="Mail"            ref="mail" /></li>
+          <li><FormControl type="password" label="PassWord"        placeholder="PassWord"        ref="password" /></li>
+          <li><FormControl type="password" label="Re:PassWord"     placeholder="PassWord"        ref="password_confirmation" /></li>
+          <li><FormControl type="submit"   value="CreateNewUser" /></li>
         </ul>
       </form>
     )
