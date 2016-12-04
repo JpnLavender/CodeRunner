@@ -9,13 +9,13 @@ Immediate execution environment for performing competition programming on the We
 
 ~~~sh
 $ brew cask install dokcer
-$ docker-compose up -d
+$ docker-compose up --build
 ~~~
 
 ##When Docker is installed
 
 ~~~sh
-$ docker-compose up -d
+$ docker-compose up --build
 ~~~
 
 ##How to use
