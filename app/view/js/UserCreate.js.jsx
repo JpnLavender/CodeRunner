@@ -69,13 +69,13 @@ export class UserCreateForm extends React.Component {
     return(
       <form className="userCreateForm" onSubmit={this.handleSubmit}>
         <ul>
-          <li><FormControl type="text"     label="UserName"        placeholder="UserName"        ref="name" /></li>
-          <li><FormControl type="url"      label="GitHubAccount"   placeholder="GitHubAccount"   ref="my_github_url" /></li>
-          <li><FormControl type="text"     label="DefaultLanguage" placeholder="DefaultLanguage" ref="default_lang" /></li>
-          <li><FormControl type="email"    label="Mail"            placeholder="Mail"            ref="mail" /></li>
-          <li><FormControl type="password" label="PassWord"        placeholder="PassWord"        ref="password" /></li>
+          <li><FormControl type="text"     label="UserName"        placeholder="UserName"        ref="name" />                 </li>
+          <li><FormControl type="url"      label="GitHubAccount"   placeholder="GitHubAccount"   ref="my_github_url" />        </li>
+          <li><FormControl type="text"     label="DefaultLanguage" placeholder="DefaultLanguage" ref="default_lang" />         </li>
+          <li><FormControl type="email"    label="Mail"            placeholder="Mail"            ref="mail" />                 </li>
+          <li><FormControl type="password" label="PassWord"        placeholder="PassWord"        ref="password" />             </li>
           <li><FormControl type="password" label="Re:PassWord"     placeholder="PassWord"        ref="password_confirmation" /></li>
-          <li><FormControl type="submit"   value="CreateNewUser" /></li>
+          <li><FormControl type="submit"   value="CreateNewUser" />                                                            </li>
         </ul>
       </form>
     )
