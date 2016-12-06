@@ -15,7 +15,6 @@ class App extends React.Component {
       <div>
         <header>
           <ul>
-            <li><Link to="app">test</Link></li>
             <li><Link to="Questions">Questions</Link></li>
             <li><Link to="MyPage">MyPage</Link></li>
             <li><Link to="SignUp">SignUp</Link></li>
